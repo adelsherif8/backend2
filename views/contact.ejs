@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pyramids</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+  </head>
+  <body>
+    <section>
+      <div id="header">
+        <div id="top">
+          <img
+            id="pyr"
+            src="/img/pyramids.jpg"
+            alt="pyramid logo"
+            width="70px"
+          />
+        </div>
+        <div id="down">
+          <div id="search">
+            <form action="/search" method="get">
+              <input
+                id="search1"
+                type="text"
+                name="search"
+                placeholder="Search..."
+              />
+              <input type="submit" value="Search" />
+            </form>
+          </div>
+          <a href="./index.html">Home</a>
+          <a href="./service.html">Our Services.</a>
+          <a href="./contact">Contact us</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1 id="contact">Contact Us</h1>
+      <form action="/submit-contact-form" method="post">
+        <div id="namediv">
+          <label for="name" id="nameword">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div id="emaildiv">
+          <label for="email" id="emailword">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div id="messagediv">
+          <label for="message" id="messageword">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </section>
+  </body>
+</html>
